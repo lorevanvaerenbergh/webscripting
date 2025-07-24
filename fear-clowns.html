@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NightmareSim" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <title>Clowns - Nightmare Simulator</title>
+</head>
+
+<body>
+    <section class="clown-section">
+        <div class="container">
+            <div class="clown-content">
+                <h1>You hear laughter in the distance...</h1>
+                <button class="button" id="turnButton">Turn Around</button>
+                <p id="scareText"></p>
+
+                <a href="select.html">
+                    <button class="button">Wake Up</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <audio id="clownHorn" src="audio/clown-horn.mp3"></audio>
+    <script src="js/fear-clowns.js" defer></script>
+</body>
+
+</html>

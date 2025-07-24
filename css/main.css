@@ -1,0 +1,393 @@
+body {
+    font-family: 'Crimson Text', serif;
+    color: white;
+    overflow: hidden;
+    letter-spacing: 0.20rem;
+}
+
+.container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*INTRO PAGINA / Index pg --------------------*/
+.intro-section {
+    text-align: center;
+}
+
+.intro-text {
+    margin-top: 15rem;
+    margin-bottom: 1rem;
+    animation: softShake 2s infinite ease-in-out;
+}
+
+.img-background {
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+    padding-top: 0.25rem;
+    letter-spacing: normal;
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(125, 3, 3);
+    color: white;
+    border: black solid 1px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.enabled-link {
+    pointer-events: auto;
+    opacity: 1;
+    cursor: pointer;
+    padding-top: 0.25rem;
+    letter-spacing: normal;
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(125, 3, 3);
+    color: white;
+    border: black solid 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.name-input {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: black solid 1px;
+}
+
+/*SELECT PG---------------------------------*/
+.select-section {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.select-section h1 {
+    margin-bottom: 5rem;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typeWriter 4s steps(52) 1 forwards,
+        softShake 2s infinite;
+}
+
+.select-options {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.5s;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: rgb(0, 0, 0);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: 12rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 0.3rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.option img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.option:hover {
+    transform: scale(1.1);
+    background-color: rgb(125, 3, 3);
+}
+
+.music-button {
+    cursor: pointer;
+    padding-top: 0.25rem;
+    letter-spacing: normal;
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(125, 3, 3);
+    color: white;
+    border: black solid 1px;
+}
+
+/* FEAR OF HEIGHTS------------------------------*/
+
+.button {
+    cursor: pointer;
+    padding-top: 0.3rem;
+    letter-spacing: normal;
+    font-size: 1rem;
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(125, 3, 3);
+    color: white;
+    border: black solid 1px;
+}
+
+.heights-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/heights-pov.jpg') no-repeat center center/cover;
+    transition: transform 0.5s ease;
+}
+
+.heights-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    margin-top: 40vh;
+}
+
+.heights-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: softShake 2s infinite;
+}
+
+.heights-content p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
+
+/*FEAR OF CLOWNS--------------------------------*/
+.clown-section {
+    background: url('/assets/dark-street.webp') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.clown-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    margin-top: 17rem;
+}
+
+.clown-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: softShake 2s infinite;
+}
+
+.clown-content p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+}
+
+.flash {
+    animation: flash 0.2s alternate infinite;
+}
+
+/* FEAR OF DROWNING ----------------------------- */
+
+.drowning-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('/assets/underwater.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.drowning-section h1 {
+    margin-top: 12rem;
+    font-size: 3rem;
+    animation: softShake 2s infinite;
+}
+
+.drowning-content {
+    margin-bottom: 15rem;
+}
+
+/* FEAR OF SPIDERS ------------------------------*/
+
+.spider-container {
+    height: 100vh;
+    width: 100vw;
+    background: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.spider-container p {
+    margin-bottom: 2rem;
+    animation: softShake 2s infinite;
+}
+
+#jumpscare {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jumpscare.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#jumpscare img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#closeButton {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*ANIMATIONS -------------------------------------*/
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) scale(1.1);
+    }
+
+    25% {
+        transform: translate(-10px, 10px) scale(1.1);
+    }
+
+    50% {
+        transform: translate(10px, -10px) scale(1.1);
+    }
+
+    75% {
+        transform: translate(-10px, 10px) scale(1.1);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1.1);
+    }
+}
+
+@keyframes flash {
+    from {
+        color: white;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+@keyframes typeWriter {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes softShake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-1px, 1px);
+    }
+
+    40% {
+        transform: translate(1.5px, -0.5px);
+    }
+
+    60% {
+        transform: translate(-1px, -1.5px);
+    }
+
+    80% {
+        transform: translate(1px, 1px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* MOBILE ---------------------------------*/
+
+@media (max-width: 1023px) {
+    body {
+        overflow: auto;
+    }
+
+    .clown-section {
+        background: url('/assets/dark-street.webp') no-repeat center center/cover;
+        height: 150vh;
+    }
+}
